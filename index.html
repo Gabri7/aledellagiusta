@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>TEST</title>
+    <title>Teegarden's star c</title>
     <meta name="description" content="Teegarden's star c">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.2.0/aframe.min.js"></script>
   <style>
@@ -128,6 +128,22 @@
     /*----------------*/
 
     /* Stile per il pulsante audio e il pulsante daltonismo */
+    #audio-button, #colorblind-button {
+      position: fixed;
+      right: 20px;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.7);
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease;
+    }
 
     #audio-button {
       top: 20px;
@@ -166,7 +182,7 @@
 </head>
 <body>
     <a-scene>
-        <a-sky src="./island.jpg"></a-sky>
+        <a-sky src="./island.JPG"></a-sky>
     
         <!-- Aggiungere una camera con cursore per interazione -->
         <a-camera>
@@ -174,12 +190,12 @@
         </a-camera>
     
         <!-- Testo Titolo -->
-        <a-text font="kelsonsans" value="Teegarden's star c" width="6" position="-2.5 0.25 -1.5"
+        <a-text font="kelsonsans" value="" width="6" position="-2.5 0.25 -1.5"
                 rotation="0 15 0"></a-text>
     
-        
+      </a-scene>
     
-      
+
 
 
   <script>
